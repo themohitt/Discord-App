@@ -1,10 +1,10 @@
 import { Text, View, StyleSheet, Image } from "react-native";
 
-function ChatConainer({source,name,message,time,number}) {
+function ChatConainer({ source, name, message, time, number }) {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.containerOne}>
-        <Image source={require('../assets/Images/Background/ele.png')}/>
+        <Image source={require("../assets/Images/Background/ele.png")} />
       </View>
 
       <View style={styles.containerTwo}>
@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     flex: 0.3,
   },
-  text:{
-    color:'#ffffff'
+  text: {
+    color: "#ffffff",
   },
-  leftText:{
-    color:'#ffffff',
-    textAlign:'right'
-  }
+  leftText: {
+    color: "#ffffff",
+    textAlign: "right",
+  },
 });
