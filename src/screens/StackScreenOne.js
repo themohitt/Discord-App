@@ -3,7 +3,6 @@ import {
   View,
   Text,
   StyleSheet,
-  ImageBackground,
   Image,
   TouchableOpacity,
   ScrollView,
@@ -205,7 +204,7 @@ const StackScreenOne = () => {
 
                 <View style={styles.containerThree}>
                   <Text style={styles.leftText}>{item.time}</Text>
-                  <Text style={styles.numberStyletwo}>{item.number}</Text>
+                  <Text style={styles.numberStyleTwo}>{item.number}</Text>
                 </View>
               </TouchableOpacity>
             )}
@@ -317,7 +316,7 @@ const styles = StyleSheet.create({
     width: pixelNormalize(101),
     height: pixelNormalize(19),
   },
-  numberStyletwo: {
+  numberStyleTwo: {
     backgroundColor: "#191919",
     textAlign: "center",
     alignItems: "center",

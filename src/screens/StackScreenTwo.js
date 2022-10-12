@@ -3,19 +3,14 @@ import {
   View,
   Text,
   StyleSheet,
-  TouchableOpacity,
   TextInput,
   Image,
   ScrollView,
 } from "react-native";
-import { useState } from "react";
-import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { pixelNormalize } from "../constants/Size";
-
-import Note from "../component/Note";
 
 const StackScreenTwo = ({ navigation }) => {
   return (
