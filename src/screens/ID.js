@@ -8,110 +8,110 @@ import { pixelNormalize } from "../constants/Size";
 
 const ID = ({ navigation }) => {
   return (
-    <>
-      <View style={styles.mainContainer}>
-        <View style={styles.containerOne}>
-          <View
-            style={{
-              backgroundColor: "#0d0d0d",
-              width: "100%",
-              height: "100%",
-              justifyContent: "center",
-              alignItems: "center",
-              borderBottomLeftRadius: pixelNormalize(100),
-            }}
-          ></View>
-        </View>
-
-        <View style={styles.containerTwo}>
-          <View style={styles.nameContainer}>
-            <View style={styles.nameStyle}>
-              <Text
+      <>
+        <View style={styles.mainContainer}>
+          <View style={styles.containerOne}>
+            <View
                 style={{
-                  color: "white",
-                  fontFamily: "Poppins-bold",
-                  fontSize: pixelNormalize(24),
+                  backgroundColor: "#0d0d0d",
+                  width: "100%",
+                  height: "100%",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderBottomLeftRadius: pixelNormalize(100),
                 }}
-              >
-                Roy Jason
-              </Text>
+            ></View>
+          </View>
+
+          <View style={styles.containerTwo}>
+            <View style={styles.nameContainer}>
+              <View style={styles.nameStyle}>
+                <Text
+                    style={{
+                      color: "white",
+                      fontFamily: "Poppins-bold",
+                      fontSize: pixelNormalize(24),
+                    }}
+                >
+                  Roy Jason
+                </Text>
+              </View>
+              <View style={styles.emailStyle}>
+                <Text
+                    style={{
+                      color: "#878787",
+                      fontFamily: "Poppins-regular",
+                      fontSize: pixelNormalize(15),
+                    }}
+                >
+                  jashonroy132@gmail.com
+                </Text>
+              </View>
             </View>
-            <View style={styles.emailStyle}>
-              <Text
-                style={{
-                  color: "#878787",
-                  fontFamily: "Poppins-regular",
-                  fontSize: pixelNormalize(15),
-                }}
-              >
-                jashonroy132@gmail.com
-              </Text>
+
+            <View style={styles.profileContainer}>
+              <Ionicons
+                  name="ios-person-circle"
+                  size={pixelNormalize(24)}
+                  color="white"
+                  style={styles.imageStyle}
+              />
+              <Text style={styles.text}>Profile</Text>
+            </View>
+
+            <View style={styles.languagesContainer}>
+              <FontAwesome
+                  name="language"
+                  size={pixelNormalize(24)}
+                  color="white"
+                  style={styles.imageStyle}
+              />
+              <Text style={styles.text}>Languages</Text>
+            </View>
+
+            <View style={styles.idContainer}>
+              <MaterialCommunityIcons
+                  name="credit-card-scan-outline"
+                  size={pixelNormalize(24)}
+                  color="white"
+                  style={styles.imageStyle}
+              />
+              <Text style={styles.text}>Face ID</Text>
+            </View>
+
+            <View style={styles.infoContainer}>
+              <AntDesign
+                  name="exclamationcircle"
+                  size={pixelNormalize(24)}
+                  style={styles.imageStyle}
+              />
+              <Text style={styles.text}>App Info</Text>
+            </View>
+
+            <View style={styles.careContainer}>
+              <Ionicons
+                  name="md-call-sharp"
+                  size={pixelNormalize(24)}
+                  color="white"
+                  style={styles.imageStyle}
+              />
+              <Text style={styles.text}>Customer Care</Text>
             </View>
           </View>
-
-          <View style={styles.profileContainer}>
-            <Ionicons
-              name="ios-person-circle"
-              size={pixelNormalize(24)}
-              color="white"
-              style={styles.imageStyle}
-            />
-            <Text style={styles.text}>Profile</Text>
-          </View>
-
-          <View style={styles.languagesContainer}>
-            <FontAwesome
-              name="language"
-              size={pixelNormalize(24)}
-              color="white"
-              style={styles.imageStyle}
-            />
-            <Text style={styles.text}>Languages</Text>
-          </View>
-
-          <View style={styles.idContainer}>
-            <MaterialCommunityIcons
-              name="credit-card-scan-outline"
-              size={pixelNormalize(24)}
-              color="white"
-              style={styles.imageStyle}
-            />
-            <Text style={styles.text}>Face ID</Text>
-          </View>
-
-          <View style={styles.infoContainer}>
-            <AntDesign
-              name="exclamationcircle"
-              size={pixelNormalize(24)}
-              style={styles.imageStyle}
-            />
-            <Text style={styles.text}>App Info</Text>
-          </View>
-
-          <View style={styles.careContainer}>
-            <Ionicons
-              name="md-call-sharp"
-              size={pixelNormalize(24)}
-              color="white"
-              style={styles.imageStyle}
-            />
-            <Text style={styles.text}>Customer Care</Text>
-          </View>
+          <Image
+              style={{
+                position: "absolute",
+                top: pixelNormalize(60),
+                width: pixelNormalize(104),
+                height: pixelNormalize(104),
+                borderWidth: pixelNormalize(4),
+                borderColor: "#0d0d0d",
+                borderRadius: pixelNormalize(120),
+              }}
+              source={require("../../assets/kazi.png")}
+          />
         </View>
-        <Image
-          style={{
-            position: "absolute",
-            top: pixelNormalize(60),
-            width: pixelNormalize(104),
-            height: pixelNormalize(104),
-            borderWidth: pixelNormalize(4),
-            borderColor: "#0d0d0d",
-            borderRadius: pixelNormalize(120),
-          }}
-          source={require("../../assets/kazi.png")}
-        />
-      </View>
-    </>
+      </>
   );
 };
 export default ID;
@@ -151,6 +151,7 @@ const styles = StyleSheet.create({
     fontSize: pixelNormalize(30),
     flex: 0.16,
     flexDirection: "row",
+    
   },
   languagesContainer: {
     color: "#e8ab1c",
@@ -186,14 +187,16 @@ const styles = StyleSheet.create({
     // marginTop:pixelNormalize(5),
     fontFamily: "Poppins-regular",
     fontSize: pixelNormalize(17),
-    marginRight: pixelNormalize(50),
+    marginRight: pixelNormalize(150),
     width: pixelNormalize(52),
-    height: pixelNormalize(24),
+    height: pixelNormalize(30),
+    // marginLeft:pixelNormalize(38),
+    textAlign:'left',
   },
   imageStyle: {
     flex: 0.3,
     color: "white",
-    marginLeft: pixelNormalize(30),
+    marginLeft: pixelNormalize(44),
     width: pixelNormalize(24),
     height: pixelNormalize(24),
   },
@@ -202,7 +205,7 @@ const styles = StyleSheet.create({
     height: pixelNormalize(33),
   },
   emailStyle: {
-    width: pixelNormalize(192),
+    width: pixelNormalize(200),
     height: pixelNormalize(21),
     marginTop: pixelNormalize(5),
   },
