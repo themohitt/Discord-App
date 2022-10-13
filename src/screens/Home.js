@@ -126,9 +126,10 @@ const Home = () => {
               width: pixelNormalize(354),
               height: pixelNormalize(290),
               borderRadius: pixelNormalize(50),
+              marginBottom:pixelNormalize(30)
             }}
           >
-            <Text style={styles.Text}>Let's connect with your friends</Text>
+            <Text style={styles.text}>Let's connect with your friends</Text>
             <View style={styles.indicatorContainer}>
               {images.map((image, imageIndex) => {
                 const width = scrollX.interpolate({
@@ -185,7 +186,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#000000",
   },
   textContainer: {
-    fontFamily: "Poppins-bold",
+    fontFamily: "Poppins-medium",
     fontSize: pixelNormalize(20),
     color: "black",
     textAlign: "center",
@@ -203,6 +204,7 @@ const styles = StyleSheet.create({
     width: pixelNormalize(294),
     height: pixelNormalize(70),
     justifyContent: "center",
+    marginBottom: pixelNormalize(30),
   },
   container: {},
   scrollContainer: {
@@ -244,15 +246,17 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     textAlign: "center",
   },
-  Text: {
+  text: {
     color: "white",
     textAlign: "center",
-    fontFamily: "Poppins-bold",
+    fontFamily: "botherold-bold",
     fontSize: pixelNormalize(25),
     alignItems: "center",
     justifyContent: "center",
     width: pixelNormalize(260),
     height: pixelNormalize(66),
     marginBottom: pixelNormalize(33),
+    fontWeight:'bold',
+    marginTop:pixelNormalize(51)
   },
 });

@@ -156,20 +156,21 @@ const StackScreenOne = () => {
           <View
             style={{
               flex: 0.12,
-              margin: pixelNormalize(10),
+              marginTop:pixelNormalize(34),
               justifyContent: "center",
               width: pixelNormalize(155),
               height: pixelNormalize(21),
               alignItems: "center",
+              marginLeft:pixelNormalize(25),
+              marginBottom:pixelNormalize(20)
             }}
           >
             <Text
               style={{
                 color: "white",
                 fontSize: 14,
-                fontFamily: "Poppins-bold",
-              }}
-            >
+                fontFamily: "Poppins-medium",
+              }}>
               All Discord Members
             </Text>
           </View>
@@ -288,10 +289,11 @@ const styles = StyleSheet.create({
   leftText: {
     color: "#ffffff",
     textAlign: "right",
-    fontFamily: "Poppins-bold",
+    fontFamily: "Poppins-regular",
     width: pixelNormalize(59),
     height: pixelNormalize(19),
     fontSize: pixelNormalize(13),
+    marginRight: pixelNormalize(36),
   },
   imageStyle: {
     height: pixelNormalize(54),
@@ -310,7 +312,7 @@ const styles = StyleSheet.create({
     height: pixelNormalize(22),
   },
   messageStyles: {
-    color: "white",
+    color: "#b3b3b3",
     fontFamily: "Poppins-regular",
     fontSize: pixelNormalize(13),
     width: pixelNormalize(101),
@@ -328,6 +330,7 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     width: pixelNormalize(22),
     height: pixelNormalize(22),
+    marginRight: pixelNormalize(53),
   },
   flatlistStyles: {
     flex: 0.88,
