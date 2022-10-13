@@ -9,7 +9,8 @@ export default function App() {
     "Poppins-medium" : require("./src/fonts/Poppins-Medium.ttf"),
     "botherold-bold" : require("./src/fonts/Berthold-Imago-Bold.ttf")
   });
-  if (!fontsLoaded) {
+  if (!fontsLoaded) 
+  {
     return <AppLoading />;
   }
   return (

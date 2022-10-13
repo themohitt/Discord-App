@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
   textContainer: {
     fontFamily: "Poppins-medium",
     fontSize: pixelNormalize(20),
-    color: "black",
+    color: "#1A1C21",
     textAlign: "center",
   },
   containerThree: {
@@ -250,13 +250,14 @@ const styles = StyleSheet.create({
     color: "white",
     textAlign: "center",
     fontFamily: "botherold-bold",
-    fontSize: pixelNormalize(25),
+    fontSize: pixelNormalize(30),
     alignItems: "center",
     justifyContent: "center",
     width: pixelNormalize(260),
     height: pixelNormalize(66),
     marginBottom: pixelNormalize(33),
     fontWeight:'bold',
-    marginTop:pixelNormalize(51)
+    marginTop:pixelNormalize(51),
+    marginBottom:pixelNormalize(33)
   },
 });
