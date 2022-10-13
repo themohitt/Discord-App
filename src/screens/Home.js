@@ -258,6 +258,5 @@ const styles = StyleSheet.create({
     marginBottom: pixelNormalize(33),
     fontWeight:'bold',
     marginTop:pixelNormalize(51),
-    marginBottom:pixelNormalize(33)
   },
 });

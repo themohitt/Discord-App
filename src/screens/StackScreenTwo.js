@@ -251,7 +251,7 @@ const StackScreenTwo = ({ navigation }) => {
             />
             <Feather
               name="send"
-              size={pixelNormalize(24)}
+              size={pixelNormalize(20)}
               color="#e8ab1c"
               style={{
                 flex: 0.1,

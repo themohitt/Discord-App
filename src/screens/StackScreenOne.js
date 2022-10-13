@@ -192,9 +192,9 @@ const StackScreenOne = () => {
                     <Text
                       style={{
                         color: "white",
-                        fontFamily: "Poppins-bold",
+                        fontFamily: "Poppins-medium",
                         textAlign: "left",
-                        fontSize: pixelNormalize(14),
+                        fontSize: pixelNormalize(15),
                       }}
                     >
                       {item.title}
@@ -210,7 +210,8 @@ const StackScreenOne = () => {
               </TouchableOpacity>
             )}
             keyExtractor={(item) => item.id}
-          ></FlatList>
+          >
+          </FlatList>
         </View>
       </View>
     </ScrollView>
@@ -223,6 +224,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "black",
     width: pixelNormalize(414),
+    marginBottom:pixelNormalize(66)
   },
   textConatainer: {
     color: "#ffffff",
@@ -272,19 +274,21 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     fontSize: pixelNormalize(20),
     flex: 0.25,
-    marginLeft: pixelNormalize(15),
+    marginLeft: pixelNormalize(20),
   },
   containerTwo: {
     color: "#ffffff",
     fontSize: pixelNormalize(20),
     flex: 0.5,
-    marginRight: pixelNormalize(55),
+    marginRight: pixelNormalize(112),
+    marginTop:pixelNormalize(5)
   },
   containerThree: {
     color: "#ffffff",
     fontSize: pixelNormalize(20),
     flex: 0.25,
     alignItems: "center",
+    marginTop:pixelNormalize(5)
   },
   leftText: {
     color: "#ffffff",
@@ -326,11 +330,12 @@ const styles = StyleSheet.create({
     borderRadius: pixelNormalize(30),
     padding: pixelNormalize(2),
     marginTop: pixelNormalize(5),
-    fontFamily: "Poppins-bold",
+    fontFamily: "Poppins-medium",
     color: "#ffffff",
     width: pixelNormalize(22),
     height: pixelNormalize(22),
     marginRight: pixelNormalize(53),
+    marginLeft: pixelNormalize(20),
   },
   flatlistStyles: {
     flex: 0.88,
